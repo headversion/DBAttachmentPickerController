@@ -23,8 +23,8 @@
 
 @interface NSBundle (DBLibrary)
 
-#undef  NSLocalizedString
-#define NSLocalizedString(key, comment) \
+#undef  DBLocalizedString
+#define DBLocalizedString(key, comment) \
 [NSBundle localizedStringForKey:key value:nil table:@"DBAttachmentPickerController" backupBundle:[NSBundle dbAttachmentPickerResourceBundle]]
 
 + (instancetype)dbAttachmentPickerBundle;
